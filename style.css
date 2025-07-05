@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('assets/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  padding: 20px;
+}
+form, .pagamento, .container {
+  background: rgba(0,0,0,0.75);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+input, textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}

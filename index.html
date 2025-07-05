@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inscrição 4x4 Elite Camp - Free Fire</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="fundo-freefire">
+  <h1>Inscrição 4x4 Elite Camp - Free Fire</h1>
+
+  <form id="form-inscricao">
+    <label>Nome do Time:</label>
+    <input type="text" id="nomeTime" required />
+
+    <label>Jogadores (separados por vírgula):</label>
+    <textarea id="jogadores" rows="3" required></textarea>
+
+    <label>Discord (obrigatório):</label>
+    <input type="text" id="discord" required />
+
+    <label>Link do comprovante (ex: imagem ou PDF):</label>
+    <input type="url" id="comprovante" required />
+
+    <input type="submit" value="Enviar Inscrição" />
+  </form>
+
+  <div class="pagamento">
+    <h2>Pagamento</h2>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick" />
+      <input type="hidden" name="business" value="trinchetegabriela@gmail.com" />
+      <input type="hidden" name="item_name" value="Inscrição 4x4 Elite Camp" />
+      <input type="hidden" name="amount" value="10.00" />
+      <input type="hidden" name="currency_code" value="EUR" />
+      <input type="submit" value="Pagar com PayPal" />
+    </form>
+    <p>MB WAY: envie 10€ para <strong>916567496</strong></p>
+  </div>
+
+  <a href="admin.html">Painel do Admin</a>
+
+  <script src="scripts/form.js"></script>
+</body>
+</html>

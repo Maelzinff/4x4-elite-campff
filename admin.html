@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Painel de Administração</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="fundo-freefire">
+  <div class="container">
+    <h1>Painel Admin – 4x4 Elite Camp</h1>
+    <label>Senha:</label>
+    <input type="password" id="senha" />
+    <button onclick="verificarSenha()">Entrar</button>
+
+    <div id="painel" style="display:none;">
+      <h2>Inscrições</h2>
+      <div id="listaInscricoes"></div>
+    </div>
+  </div>
+  <script src="scripts/admin.js"></script>
+</body>
+</html>
